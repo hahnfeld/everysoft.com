@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matt Hahnfeld · Engineering leader for loyalty, travel and AI</title>
+<meta name="description" content="Matt Hahnfeld is an engineering leader who spent a decade modernizing airline loyalty at Alaska Airlines, from real-time points to the award-winning Atmos Rewards, and took AI from experiments to production.">
+<link rel="canonical" href="https://www.everysoft.com/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161A" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Matt Hahnfeld · Engineering leader for loyalty, travel and AI">
+<meta property="og:description" content="A decade modernizing airline loyalty, from real-time points to Atmos Rewards, and AI taken from experiments to production.">
+<meta property="og:url" content="https://www.everysoft.com/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2316181D'/%3E%3Ctext x='9' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23F6F3EC'%3EMH%3C/text%3E%3Ccircle cx='55' cy='41' r='4' fill='%23F08A4B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Matt Hahnfeld","jobTitle":"Engineering leader: loyalty, travel and AI","address":{"@type":"PostalAddress","addressLocality":"Seattle","addressRegion":"WA"},"alumniOf":"Hope College","url":"https://www.everysoft.com/","sameAs":["https://www.linkedin.com/in/matt-hahnfeld","https://github.com/hahnfeld"]}
+</script>
+<style>
+:root{
+  --bg:#F6F3EC;--surface:#FFFDF8;--ink:#16181D;--muted:#5B5F68;--accent:#B4410F;--sky:#0F3D5C;--sky-ink:#F6F3EC;--rule:#D9D3C5;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --fs-hero:clamp(3rem,1.6rem + 6vw,7rem);--fs-h2:clamp(2rem,1.4rem + 2.4vw,3.25rem);--fs-h3:clamp(1.2rem,1.1rem + .5vw,1.5rem);
+  --fs-lede:clamp(1.15rem,1rem + .6vw,1.45rem);--fs-body:clamp(1rem,.96rem + .2vw,1.125rem);--fs-stat:clamp(2.5rem,2rem + 2vw,4rem);
+  --pad:clamp(1.25rem,5vw,3rem);--gap:clamp(1rem,2.5vw,2rem);--section:clamp(4rem,10vw,8rem);
+}
+@media (prefers-color-scheme:dark){:root{--bg:#14161A;--surface:#1C1F24;--ink:#ECE8DF;--muted:#A3A7AF;--accent:#F08A4B;--sky:#10324A;--sky-ink:#ECE8DF;--rule:#2C3036}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--fs-body)/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:1rem;background:var(--ink);color:var(--bg);padding:.6rem 1rem;z-index:10}
+.skip:focus{left:1rem}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:var(--pad)}
+.label{font:500 .75rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;font-variation-settings:"opsz" 144}
+h2{font-size:var(--fs-h2);line-height:1.05;letter-spacing:-.02em}
+h3{font-size:var(--fs-h3);font-weight:600;letter-spacing:-.01em;line-height:1.2;font-variation-settings:"opsz" 48}
+p{margin:0 0 1em}
+.dot{color:var(--accent)}
+
+/* header */
+header.top{display:flex;justify-content:space-between;align-items:center;padding-block:1.5rem}
+.mono-mark{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--ink);font:600 1.05rem/1 var(--serif);text-decoration:none;letter-spacing:-.02em}
+.mono-mark span{color:var(--accent)}
+nav ul{display:flex;gap:clamp(1rem,3vw,2rem);list-style:none;margin:0;padding:0}
+nav a{font:500 .78rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap);align-items:center;padding-block:clamp(2rem,7vw,6rem) clamp(3rem,7vw,5rem)}
+.hero-text{grid-column:1/8}
+.hero h1{font-size:var(--fs-hero);line-height:.95;letter-spacing:-.03em;margin:.6rem 0 1.6rem}
+.lede{font:italic 400 var(--fs-lede)/1.45 var(--serif);max-width:34ch;margin-bottom:1.6rem}
+.hero-sub{color:var(--muted);max-width:52ch}
+.meta{margin-top:1.4rem}
+.ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.3rem;font:500 .95rem/1 var(--sans);text-decoration:none;border:1px solid var(--ink);transition:background .15s,color .15s,transform .15s}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{transform:translateY(-1px)}
+.btn .arr{transition:transform .15s}.btn:hover .arr{transform:translateX(3px)}
+
+.portrait{grid-column:9/13;position:relative;margin:0;align-self:center}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;position:relative;z-index:1}
+.portrait::before{content:"";position:absolute;inset:1rem -1rem -1rem 1rem;border:1px solid var(--accent);z-index:0}
+.portrait figcaption{margin-top:1.6rem}
+/* sections */
+section{padding-block:var(--section);border-top:1px solid var(--rule)}
+.sec-head{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap);margin-bottom:clamp(2rem,5vw,3.5rem)}
+.sec-head .label{grid-column:1/4;padding-top:.8rem}
+.sec-head h2{grid-column:4/12}
+.body-offset{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap)}
+.body-offset>*{grid-column:4/12}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);row-gap:3rem}
+.stat{border-top:1px solid var(--ink);padding-top:1rem;position:relative}
+.stat::before{content:"";position:absolute;left:0;top:-1px;height:2px;width:0;background:var(--accent);transition:width .3s}
+.stat:hover::before{width:100%}
+.stat b{display:block;font:400 var(--fs-stat)/1 var(--serif);font-variant-numeric:tabular-nums;letter-spacing:-.02em;margin:.6rem 0 .5rem}
+.stat b.long{font-size:clamp(1.9rem,1.4rem + 1.5vw,2.85rem);line-height:1.35;white-space:nowrap}
+@media (max-width:640px){.stat b.long{white-space:normal;line-height:1.05}}
+.stat p{color:var(--muted);font-size:.95rem;margin:0;max-width:24ch}
+
+/* about */
+.about p{font-size:clamp(1.05rem,1rem + .3vw,1.25rem);max-width:62ch}
+.about p.first{font:400 var(--fs-lede)/1.45 var(--serif)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);margin-top:2.5rem}
+.pillars div{border-top:1px solid var(--rule);padding-top:1rem}
+.pillars h3{font-size:1.15rem;margin-bottom:.4rem}
+.pillars p{font-size:.95rem;color:var(--muted);margin:0}
+
+/* career list */
+.career{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.career li{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap);padding:1.6rem .6rem;border-bottom:1px solid var(--rule);transition:background .15s}
+.career li:hover{background:var(--surface)}
+.career .yr{grid-column:1/3;font:500 .8rem/1.8 var(--mono);letter-spacing:.08em;color:var(--muted);transition:color .15s}
+.career li:hover .yr{color:var(--accent)}
+.career h3{grid-column:3/7}
+.career p{grid-column:7/13;margin:0;color:var(--muted)}
+.awards{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.2rem}
+.awards span{font:500 .78rem/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+
+
+/* swarmeq band */
+.band{background:var(--sky);color:var(--sky-ink);border-top:0}
+.band .label{color:#F4B48A}
+.band-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap);align-items:center}
+.band-text{grid-column:1/8}
+.band h2{font-size:clamp(2.6rem,1.6rem + 4vw,5rem);letter-spacing:-.03em;margin:.6rem 0 1rem}
+.band .thesis{font:italic 400 var(--fs-lede)/1.4 var(--serif);margin-bottom:1.4rem}
+.band p{max-width:56ch;opacity:.92}
+.band .ctas{margin-top:1.6rem}
+.band .btn{border-color:var(--sky-ink);color:var(--sky-ink)}
+.band .btn.primary{background:#F08A4B;border-color:#F08A4B;color:#16181D}
+.band .btn.primary:hover{background:var(--sky-ink);border-color:var(--sky-ink);color:#16181D}
+.band .soon{font:500 .78rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;opacity:.75;align-self:center}
+.wheel{grid-column:8/13;width:100%;max-width:380px;justify-self:center}
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.card{display:flex;flex-direction:column;gap:.7rem;padding:1.5rem;background:var(--surface);border:1px solid var(--rule);text-decoration:none;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:var(--ink)}
+.card .repo{font:500 .85rem/1.3 var(--mono);color:var(--accent)}
+.card h3{font-size:1.25rem}
+.card p{margin:0;color:var(--muted);font-size:.97rem;flex:1}
+.card .tags{font:400 .72rem/1.4 var(--mono);letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.card .go{font:500 .85rem/1 var(--sans);display:inline-flex;gap:.4rem}
+.card .go span{transition:transform .15s}.card:hover .go span{transform:translateX(4px)}
+.gh-more{margin-top:1.8rem}
+
+
+/* footer */
+footer{border-top:1px solid var(--rule);padding-block:var(--section) 3rem}
+.closing{font:400 clamp(2rem,1.2rem + 3.6vw,4.25rem)/1.05 var(--serif);letter-spacing:-.025em;max-width:18ch;margin:0 0 2rem}
+.colophon{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;margin-top:clamp(3rem,8vw,6rem);padding-top:1.5rem;border-top:1px solid var(--rule)}
+.colophon p{margin:0;max-width:60ch;color:var(--muted);font-size:.9rem}
+
+/* reveal + motion */
+.js .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+.js .reveal.in{opacity:1;transform:none}
+.draw{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 1.6s cubic-bezier(.2,.7,.2,1) .2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.pop{opacity:0;animation:pop .4s ease forwards}
+@keyframes pop{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.draw{stroke-dashoffset:0}.pop{opacity:1}.js .reveal{opacity:1;transform:none}}
+
+/* responsive */
+@media (max-width:1000px){
+  .hero-text{grid-column:1/-1}.portrait{grid-column:1/-1;width:min(72%,320px);order:-1;margin-bottom:1.5rem}  .sec-head .label,.sec-head h2,.body-offset>*{grid-column:1/-1}
+  .stats{grid-template-columns:repeat(2,1fr);row-gap:2.5rem}
+  .projects{grid-template-columns:repeat(2,1fr)}
+  .band-text,.wheel{grid-column:1/-1}.wheel{max-width:260px;order:-1;justify-self:start}
+  .career h3{grid-column:3/-1}.career p{grid-column:3/-1}
+}
+@media (max-width:640px){
+  nav li.opt{display:none}
+  .pillars,.projects{grid-template-columns:1fr}
+  .career li{grid-template-columns:1fr;gap:.35rem}
+  .career .yr,.career h3,.career p{grid-column:1/-1}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a class="mono-mark" href="#top" aria-label="Matt Hahnfeld, home">MH<span>.</span></a>
+  <nav aria-label="Primary">
+    <ul>
+      <li class="opt"><a href="#about">About</a></li>
+      <li class="opt"><a href="#work">Work</a></li>
+      <li class="opt"><a href="#ai">AI</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <div class="hero-text">
+    <p class="label">Engineering leader · Loyalty, travel and AI</p>
+    <h1>Matt<br>Hahnfeld<span class="dot">.</span></h1>
+    <p class="lede">I build great teams that create exceptional software. Today, AI is part of the team.</p>
+    <p class="hero-sub">I spent a decade modernizing loyalty technology at Alaska Airlines, from miles that post in real time to the award-winning Atmos Rewards. I took AI from experiments to production, and I build AI tools in the open, including my startup, swarmeq.</p>
+    <p class="label meta">Seattle, WA</p>
+    <div class="ctas">
+      <a class="btn primary" href="https://www.linkedin.com/in/matt-hahnfeld" rel="noopener">Connect on LinkedIn <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn" href="https://github.com/hahnfeld" rel="noopener">See my work on GitHub</a>
+    </div>
+  </div>
+  <figure class="portrait">
+    <img src="img/matt.jpg" width="800" height="1000" alt="Portrait of Matt Hahnfeld" fetchpriority="high">
+  </figure>
+</div>
+
+
+
+<section id="about" aria-labelledby="about-h">
+  <div class="sec-head reveal"><p class="label">01 · About</p><h2 id="about-h">How I lead.</h2></div>
+  <div class="body-offset about">
+    <div class="reveal">
+      <p class="first">I have always believed that great software is built by great people, empowered to do their best every day and motivated by a common purpose.</p>
+      <p>When I joined Alaska Airlines in 2016, I knew our loyalty technology had to modernize, and I spent a decade driving that vision with technical and business leaders across the company. I led 14 product teams and 80+ engineers across loyalty, web and the mobile apps. My teams and I also took AI from experiments to production, and we held it to the same bar for accuracy and completeness that auditors held us to in two highly regulated industries.</p>
+      <p>My teams posted the highest engagement scores among my peers and department for most of my tenure. That's the result I'm proudest of.</p>
+      <div class="pillars">
+        <div><h3>A servant leader</h3><p>Removing roadblocks so each person can do what they do best.</p></div>
+        <div><h3>A guide</h3><p>Helping others put AI and modern mobile technology to work, and using metrics to drive better outcomes.</p></div>
+        <div><h3>An example</h3><p>Taking accountability, taking smart risks, and always innovating.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" aria-labelledby="work-h">
+  <div class="sec-head reveal"><p class="label">02 · What I've built</p><h2 id="work-h">Loyalty, rebuilt in flight. Then AI.</h2></div>
+  <ol class="career">
+    <li class="reveal"><span class="yr">2016–2018</span><h3>Virgin America into Mileage Plan</h3><p>My teams migrated Virgin America Elevate members into Mileage Plan. We benchmarked it as one of the most successful loyalty mergers of the past decade, and AwardWallet called it one of the smoothest airline integrations it had seen.</p></li>
+    <li class="reveal"><span class="yr">2019–2020</span><h3>Miles that post as you step off the plane</h3><p>My teams moved Mileage Plan accruals off the mainframe to a real-time, serverless platform on Azure, cutting the time for points to post from about three days to seconds. Alaska became one of the first airlines to post points as guests stepped off the plane.</p></li>
+    <li class="reveal"><span class="yr">2021–2022</span><h3>New partners in days, not months</h3><p>The same real-time platform delivered oneworld tiers and accruals for Alaska's 2021 entry into the alliance, then let us connect partners like Ravn and Air Tahiti Nui in days.</p></li>
+    <li class="reveal"><span class="yr">2024</span><h3>A new loyalty platform</h3><p>I led vendor selection and the 18-month modernization that retired Siebel. It now holds 14 million member accounts. We trained 200+ Customer Care agents, and the first year-end ran with zero downtime.</p></li>
+    <li class="reveal"><span class="yr">2025</span><h3>Atmos Rewards</h3><p>We combined HawaiianMiles and Mileage Plan into Atmos Rewards, now with 12M+ active members and 480 billion points outstanding.</p></li>
+    <li class="reveal"><span class="yr">2026</span><h3>Industry-first choice-based accruals</h3><p>Members choose to earn by distance, price, or segments, and about 89% of accruals post in real time. We launched it with Atmos Communities growing from two to six, and no call center spikes.</p></li>
+    <li class="reveal"><span class="yr">2025–26</span><h3>AI from experiments to production</h3><p>I rolled out Claude Code across e-commerce, grew adoption in non-engineering roles and teams across e-commerce and Alaska, and cut top users' AI spend by more than half. AI helped engineers new to mobile build every 2026 Atmos change natively in Swift and Kotlin.</p></li>
+    <li class="reveal"><span class="yr">2026</span><h3>AI agents as teammates</h3><p>Eight AI agents organized as a team completed three sprints in three hours. A human team takes about two weeks for one.</p></li>
+  </ol>
+  <div class="awards reveal" aria-label="Recognition">
+    <span>NerdWallet 2026 · Best Airline Rewards Program</span>
+    <span>The Points Guy 2026 · Best Innovation in Airline Loyalty</span>
+  </div>
+</section>
+<section class="numbers" aria-labelledby="num-h">
+  <div class="sec-head reveal"><p class="label">03 · By the numbers</p><h2 id="num-h">The results.</h2></div>
+<div class="stats" role="list">
+  <div class="stat reveal" role="listitem"><span class="label">Atmos Rewards</span><b>12M+</b><p>Active members in a program that won two 2026 industry awards</p></div>
+  <div class="stat reveal" role="listitem"><span class="label">Points outstanding</span><b>480B</b><p>Atmos points held by members at the end of 2025</p></div>
+  <div class="stat reveal" role="listitem"><span class="label">Real-time points</span><b class="long">3 days → seconds</b><p>Time for points to post after a flight, on Alaska and many partner airlines</p></div>
+  <div class="stat reveal" role="listitem"><span class="label">Mobile turnaround</span><b>4x+</b><p>Mobile delivery pace after turning around an outsourced partnership, within budget</p></div>
+  <div class="stat reveal" role="listitem"><span class="label">Strategic focus</span><b class="long">&lt;20% → 90%+</b><p>Mobile teams’ time on strategic work after the turnaround</p></div>
+  <div class="stat reveal" role="listitem"><span class="label">J.D. Power 2023</span><b>#1</b><p>Highest customer satisfaction among airline apps</p></div>
+  <div class="stat reveal" role="listitem"><span class="label">Scaling delivery</span><b>2x</b><p>Guest-facing features delivered in 2025, while launching Atmos and merging two member bases</p></div>
+  <div class="stat reveal" role="listitem"><span class="label">AI agent teams</span><b>3 in 3</b><p>Three sprints in three hours by a team of eight AI agents. A human sprint takes two weeks.</p></div>
+  <div class="stat reveal" role="listitem"><span class="label">AI cost savings</span><b>50%+</b><p>Lower spend for top Claude Code users, by matching models and workflows to the work</p></div>
+</div>
+</section>
+</div>
+
+<section class="band" id="ai" aria-labelledby="swarmeq-h">
+  <div class="wrap">
+    <div class="band-grid">
+      <div class="band-text reveal">
+        <p class="label">04 · Now building</p>
+        <h2 id="swarmeq-h">swarmeq</h2>
+        <p class="thesis">Affective-state observability for AI agents and multi-agent systems.</p>
+        <p>When a team of AI agents works together, it's hard to tell which one is stuck. swarmeq has each agent report how it's doing every 90 seconds, and a live dashboard shows each agent and the whole team at a glance. It observes; it never takes control.</p>
+        <p>It's open source under the MIT license, and it's the foundation of the startup I'm building.</p>
+        <div class="ctas">
+          <a class="btn primary" href="https://github.com/hahnfeld/swarmeq" rel="noopener">View swarmeq on GitHub <span class="arr" aria-hidden="true">→</span></a>
+          <span class="soon">swarmeq.com · coming soon</span>
+        </div>
+      </div>
+      <svg class="wheel reveal" viewBox="-110 -110 220 220" role="img" aria-labelledby="wheel-t">
+        <title id="wheel-t">Abstract feelings wheel: three rings of eight segments, a few highlighted, representing an agent team's reported states</title>
+        <g fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1">
+          <circle r="100"/><circle r="70"/><circle r="40"/>
+          <path d="M0-100V100M-100 0H100M-70.7-70.7L70.7 70.7M-70.7 70.7L70.7-70.7"/>
+        </g>
+        <path d="M0 -40 L0 -100 A100 100 0 0 1 70.7 -70.7 L28.3 -28.3 A40 40 0 0 0 0 -40Z" fill="#F08A4B" fill-opacity=".85"/>
+        <path d="M49.5 49.5 L70.7 70.7 A100 100 0 0 1 0 100 L0 70 A70 70 0 0 0 49.5 49.5Z" fill="#F08A4B" fill-opacity=".45"/>
+        <path d="M-28.3 -28.3 L-49.5 -49.5 A70 70 0 0 1 0 -70 L0 -40 A40 40 0 0 0 -28.3 -28.3Z" fill="currentColor" fill-opacity=".55"/>
+        <circle r="6" fill="#F08A4B"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<section aria-labelledby="proj-h" style="border-top:0">
+  <div class="sec-head reveal"><p class="label">05 · More AI work</p><h2 id="proj-h">Built in the open.</h2></div>
+  <div class="projects">
+    <a class="card reveal" href="https://github.com/hahnfeld/cinder-lite" rel="noopener">
+      <span class="repo">hahnfeld/cinder-lite</span><h3>Cinder Lite</h3>
+      <p>Runs Anthropic's unmodified Claude Code on an Android or iOS phone, in an app of about 5 to 8 MB.</p>
+      <span class="tags">Kotlin · Android · iOS</span><span class="go">View on GitHub <span aria-hidden="true">→</span></span>
+    </a>
+    <a class="card reveal" href="https://github.com/hahnfeld/fable-standalone-advisor" rel="noopener">
+      <span class="repo">hahnfeld/fable-standalone-advisor</span><h3>Standalone Advisor</h3>
+      <p>Pairs two AI coding sessions: a lower-cost model writes the code and consults a stronger model on judgment calls.</p>
+      <span class="tags">Claude Code · Multi-agent</span><span class="go">View on GitHub <span aria-hidden="true">→</span></span>
+    </a>
+    <a class="card reveal" href="https://github.com/hahnfeld/teams-adapter" rel="noopener">
+      <span class="repo">hahnfeld/teams-adapter</span><h3>Microsoft Teams adapter</h3>
+      <p>Lets people work with AI coding agents from a Microsoft Teams chat, with approvals right in the conversation.</p>
+      <span class="tags">TypeScript · OpenACP</span><span class="go">View on GitHub <span aria-hidden="true">→</span></span>
+    </a>
+    <a class="card reveal" href="https://github.com/hahnfeld/msrelay-provider" rel="noopener">
+      <span class="repo">hahnfeld/msrelay-provider</span><h3>Azure Relay provider</h3>
+      <p>Connects AI agents running on a local machine to the outside world with no inbound ports, keeping traffic on Microsoft's network.</p>
+      <span class="tags">Azure · OpenACP</span><span class="go">View on GitHub <span aria-hidden="true">→</span></span>
+    </a>
+    <a class="card reveal" href="https://github.com/hahnfeld/devtunnel-provider" rel="noopener">
+      <span class="repo">hahnfeld/devtunnel-provider</span><h3>Dev Tunnels provider</h3>
+      <p>Another way to reach local AI agents securely, built on Microsoft Dev Tunnels.</p>
+      <span class="tags">Azure · OpenACP</span><span class="go">View on GitHub <span aria-hidden="true">→</span></span>
+    </a>
+    <a class="card reveal" href="https://github.com/hahnfeld" rel="noopener">
+      <span class="repo">github.com/hahnfeld</span><h3>Everything else</h3>
+      <p>Older Android apps and open-source experiments going back to the code.google.com days.</p>
+      <span class="tags">Archive</span><span class="go">Browse GitHub <span aria-hidden="true">→</span></span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact">
+  <p class="label">06 · Contact</p>
+  <p class="closing">If you're building in loyalty, travel or AI, let's compare notes<span class="dot">.</span></p>
+  <div class="ctas">
+    <a class="btn primary" href="https://www.linkedin.com/in/matt-hahnfeld" rel="noopener">Connect on LinkedIn <span class="arr" aria-hidden="true">→</span></a>
+    <a class="btn" href="https://github.com/hahnfeld" rel="noopener">GitHub</a>
+  </div>
+  <div class="colophon">
+    <p>EverySoft was my independent software practice from 1998 to 2016, including Android apps with 150K+ downloads. Everysoft.com is now home base.</p>
+    <p class="label">© 2026 Matt Hahnfeld · Hand-built, no frameworks</p>
+  </div>
+</footer>
+</div>
+<script>
+document.documentElement.classList.add('js');
+(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})})();
+</script>
+</body>
+</html>
