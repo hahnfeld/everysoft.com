@@ -41,8 +41,9 @@ a:hover{text-decoration-thickness:2px}
 .skip:focus{left:1rem}
 .wrap{max-width:1200px;margin:0 auto;padding-inline:var(--pad)}
 .label{font:500 .75rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;font-variation-settings:"opsz" 144}
-h2{font-size:var(--fs-h2);line-height:1.05;letter-spacing:-.02em}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
+h1{font-variation-settings:"opsz" 144}
+h2{font-size:var(--fs-h2);line-height:1.05;letter-spacing:-.01em}
 h3{font-size:var(--fs-h3);font-weight:600;letter-spacing:-.01em;line-height:1.2;font-variation-settings:"opsz" 48}
 p{margin:0 0 1em}
 .dot{color:var(--accent)}
@@ -52,7 +53,7 @@ header.top{display:flex;justify-content:space-between;align-items:center;padding
 .mono-mark{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--ink);font:600 1.05rem/1 var(--serif);text-decoration:none;letter-spacing:-.02em}
 .mono-mark span{color:var(--accent)}
 nav ul{display:flex;gap:clamp(1rem,3vw,2rem);list-style:none;margin:0;padding:0}
-nav a{font:500 .78rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav a{display:inline-block;padding:.85rem .2rem;font:500 .78rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
 nav a:hover{color:var(--ink)}
 
 /* hero */
@@ -117,7 +118,7 @@ section{padding-block:var(--section);border-top:1px solid var(--rule)}
 .band .label{color:#F4B48A}
 .band-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap);align-items:center}
 .band-text{grid-column:1/8}
-.band h2{font-size:clamp(2.6rem,1.6rem + 4vw,5rem);letter-spacing:-.03em;margin:.6rem 0 1rem}
+.band h2{font-size:clamp(2.6rem,1.6rem + 4vw,5rem);letter-spacing:-.015em;margin:.6rem 0 1rem}
 .band .thesis{font:italic 400 var(--fs-lede)/1.4 var(--serif);margin-bottom:1.4rem}
 .band p{max-width:56ch;opacity:.92}
 .band .ctas{margin-top:1.6rem}
@@ -136,7 +137,7 @@ section{padding-block:var(--section);border-top:1px solid var(--rule)}
 .card .repo{font:500 .85rem/1.3 var(--mono);color:var(--accent)}
 .card h3{font-size:1.25rem}
 .card p{margin:0;color:var(--muted);font-size:.97rem;flex:1}
-.card .tags{font:400 .72rem/1.4 var(--mono);letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.card .tags{font:400 .75rem/1.4 var(--mono);letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
 .card .go{font:500 .85rem/1 var(--sans);display:inline-flex;gap:.4rem}
 .card .go span{transition:transform .15s}.card:hover .go span{transform:translateX(4px)}
 .gh-more{margin-top:1.8rem}
@@ -144,7 +145,7 @@ section{padding-block:var(--section);border-top:1px solid var(--rule)}
 
 /* footer */
 footer{border-top:1px solid var(--rule);padding-block:var(--section) 3rem}
-.closing{font:400 clamp(2rem,1.2rem + 3.6vw,4.25rem)/1.05 var(--serif);letter-spacing:-.025em;max-width:18ch;margin:0 0 2rem}
+.closing{font:400 clamp(2rem,1.2rem + 3.6vw,4.25rem)/1.05 var(--serif);letter-spacing:-.015em;max-width:18ch;margin:0 0 2rem}
 .colophon{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;margin-top:clamp(3rem,8vw,6rem);padding-top:1.5rem;border-top:1px solid var(--rule)}
 .colophon p{margin:0;max-width:60ch;color:var(--muted);font-size:.9rem}
 
@@ -170,7 +171,12 @@ footer{border-top:1px solid var(--rule);padding-block:var(--section) 3rem}
   .pillars,.projects{grid-template-columns:1fr}
   .career li{grid-template-columns:1fr;gap:.35rem}
   .career .yr,.career h3,.career p{grid-column:1/-1}
+  .stats{grid-template-columns:1fr;row-gap:2.2rem}
+  .stat p{max-width:36ch}
+  .stat b.long{white-space:nowrap}
+  .wheel{max-width:180px}
   }
+@media (max-width:1000px){.sec-head h2.label{grid-column:1/-1}}
 </style>
 </head>
 <body>
