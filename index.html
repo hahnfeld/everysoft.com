@@ -14,7 +14,7 @@
 <meta property="og:description" content="A decade modernizing airline loyalty, from real-time points to Atmos Rewards, and AI taken from experiments to production.">
 <meta property="og:url" content="https://www.everysoft.com/">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2316181D'/%3E%3Ctext x='9' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23F6F3EC'%3EMH%3C/text%3E%3Ccircle cx='55' cy='41' r='4' fill='%23F08A4B'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20fill='%2316181D'/%3E%3Ctext%20x='9'%20y='43'%20font-family='Georgia,serif'%20font-size='30'%20font-weight='700'%20fill='%23F6F3EC'%3EMH%3C/text%3E%3Ccircle%20cx='55'%20cy='41'%20r='4'%20fill='%23F08A4B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -36,6 +36,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--fs-body)/1.6 
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.2em}
 a:hover{text-decoration-thickness:2px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:-9999px;top:1rem;background:var(--ink);color:var(--bg);padding:.6rem 1rem;z-index:10}
 .skip:focus{left:1rem}
 .wrap{max-width:1200px;margin:0 auto;padding-inline:var(--pad)}
@@ -90,6 +91,7 @@ section{padding-block:var(--section);border-top:1px solid var(--rule)}
 @media (max-width:640px){.stat b.long{white-space:normal;line-height:1.05}}
 .stat p{color:var(--muted);font-size:.95rem;margin:0;max-width:24ch}
 
+.sec-head h2.label{grid-column:1/4;font:500 .75rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:.8rem}
 /* about */
 .about p{font-size:clamp(1.05rem,1rem + .3vw,1.25rem);max-width:62ch}
 .about p.first{font:400 var(--fs-lede)/1.45 var(--serif)}
@@ -125,6 +127,8 @@ section{padding-block:var(--section);border-top:1px solid var(--rule)}
 .band .soon{font:500 .78rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;opacity:.75;align-self:center}
 .wheel{grid-column:8/13;width:100%;max-width:380px;justify-self:center}
 
+.band :focus-visible{outline-color:#F4B48A}
+@media (prefers-color-scheme:dark){.btn.primary:hover{color:#16181D}}
 /* projects */
 .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
 .card{display:flex;flex-direction:column;gap:.7rem;padding:1.5rem;background:var(--surface);border:1px solid var(--rule);text-decoration:none;transition:transform .15s,border-color .15s}
@@ -171,9 +175,8 @@ footer{border-top:1px solid var(--rule);padding-block:var(--section) 3rem}
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="wrap">
-<header class="top">
-  <a class="mono-mark" href="#top" aria-label="Matt Hahnfeld, home">MH<span>.</span></a>
+<header class="top wrap">
+  <a class="mono-mark" href="#top">MH<span aria-hidden="true">.</span><span class="sr-only"> Matt Hahnfeld, home</span></a>
   <nav aria-label="Primary">
     <ul>
       <li class="opt"><a href="#about">About</a></li>
@@ -185,6 +188,7 @@ footer{border-top:1px solid var(--rule);padding-block:var(--section) 3rem}
 </header>
 
 <main id="main">
+<div class="wrap">
 <div class="hero" id="top">
   <div class="hero-text">
     <p class="label">Engineering leader · Loyalty, travel and AI</p>
@@ -226,13 +230,13 @@ footer{border-top:1px solid var(--rule);padding-block:var(--section) 3rem}
     <li class="reveal"><span class="yr">2026</span><h3>Industry-first choice-based accruals</h3><p>Members choose to earn by distance, price, or segments, and about 89% of accruals post in real time. It launched alongside the expansion of Atmos Communities from two to six, with no call center spikes.</p></li>
     <li class="reveal"><span class="yr">2025–26</span><h3>Claude Code across e-commerce</h3><p>I rolled out Claude Code across e-commerce and extended it to non-engineering roles and other teams at Alaska. AI helped engineers new to mobile build every 2026 Atmos change natively in Swift and Kotlin.</p></li>
   </ol>
-  <div class="awards reveal" aria-label="Recognition">
+  <div class="awards reveal">
     <span>NerdWallet 2026 · Best Airline Rewards Program</span>
     <span>The Points Guy 2026 · Best Innovation in Airline Loyalty</span>
   </div>
 </section>
 <section class="numbers" aria-labelledby="num-h">
-  <div class="sec-head reveal"><p class="label" id="num-h">03 · By the numbers</p></div>
+  <div class="sec-head reveal"><h2 class="label" id="num-h">03 · By the numbers</h2></div>
 <div class="stats" role="list">
   <div class="stat reveal" role="listitem"><span class="label">Atmos Rewards</span><b>12M+</b><p>Active members in a program that won two 2026 industry awards</p></div>
   <div class="stat reveal" role="listitem"><span class="label">Points outstanding</span><b>480B</b><p>Atmos points held by members at the end of 2025</p></div>
@@ -312,12 +316,12 @@ footer{border-top:1px solid var(--rule);padding-block:var(--section) 3rem}
     </a>
   </div>
 </section>
-
+</div>
 </main>
 
-<footer id="contact">
+<footer id="contact" class="wrap" aria-labelledby="contact-h">
   <p class="label">06 · Contact</p>
-  <p class="closing">If you're building in loyalty, travel or AI, let's compare notes<span class="dot">.</span></p>
+  <h2 class="closing" id="contact-h">If you're building in loyalty, travel or AI, let's compare notes<span class="dot">.</span></h2>
   <div class="ctas">
     <a class="btn primary" href="https://www.linkedin.com/in/matt-hahnfeld" rel="noopener">Connect on LinkedIn <span class="arr" aria-hidden="true">→</span></a>
     <a class="btn" href="https://github.com/hahnfeld" rel="noopener">GitHub</a>
@@ -327,7 +331,6 @@ footer{border-top:1px solid var(--rule);padding-block:var(--section) 3rem}
     <p class="label">© 2026 Matt Hahnfeld</p>
   </div>
 </footer>
-</div>
 <script>
 document.documentElement.classList.add('js');
 (function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
